@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Bellefair|Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <title>Wikipedia Viewer</title>
+    </head>
+    
+    <body>
+        <h1>Wikipedia Viewer</h1>
+        
+      <div class="container search-panel">
+        <div class="row justify-content-center">
+            <div class="col-sm-8">
+              <div class="input-group">
+               <input type="text" class="form-control" id="search-input" placeholder="Search Wikipedia...">
+              </div>
+            </div>
+            <div class="col">
+               <button class="btn btn-outline-info" id="search-btn" type="button">Search</button>
+            </div>
+            <div class="col">
+               <a target="_blank" href="https://en.wikipedia.org/wiki/Special:Random"><button class="btn btn-outline-danger" id="random-btn" type="button">Random</button></a>
+            </div>
+        </div>
+      </div>
+        
+        <div class="container">
+            <div class="row" id="results">
+                <!--
+                <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-block">
+                        <h3 class="card-title">Wiki article title</h3>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-outline-info">Read more</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-block">
+                        <h3 class="card-title">Wiki article title</h3>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-outline-info">Read more</a>
+                      </div>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+        
+        <footer>
+            <p id="credits">Coded by <a href="https://github.com/nawnaw7" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i> Nawnaw</a> for FCC</p>
+        </footer>
+        
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
