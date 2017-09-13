@@ -15,8 +15,6 @@ $('#search-input').keydown(function(evt) {
     }
 });
 
-// Click event on 'x'
-
 
 
 // Retrieve wikipedia data in jsonp format based on 'search'
@@ -61,7 +59,7 @@ var renderHtml = function(wikiData) {
     var card;
     
     for (i = 0; i < searchData[0].length; i++) {
-        card = '<div class="col-sm-6 cards"><div class="card"><div class="card-block"><h3 class="card-title" id="title-' + i + '"></h3><p class="card-text" id="text-' + i + '">With supporting text below as a natural lead-in to additional content.</p><a id="link-' + i + '" href="#" class="btn btn-outline-info" target="_blank">Read more</a></div></div></div>';
+        card = '<div class="col-sm-6 cards"><div class="card fadeIn"><div class="card-block"><h3 class="card-title" id="title-' + i + '"></h3><p class="card-text" id="text-' + i + '">With supporting text below as a natural lead-in to additional content.</p><a id="link-' + i + '" href="#" class="btn btn-outline-info" target="_blank">Read more</a></div></div></div>';
         $('#results').append(card);
         $('#title-' + i).text(searchData[0][i]);
     }

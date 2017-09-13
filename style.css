@@ -27,6 +27,8 @@ input[type="text"] {
 
 #random-btn, #search-btn {
     margin-left: -25px;
+    outline: none;
+    box-shadow: none;
 }
 
 #random-btn {
@@ -48,24 +50,68 @@ input[type="text"] {
 
 .card {
     margin-bottom: 20px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
 }
 
 footer {
     text-align: center;
-    margin-top: 120px;
+    margin-top: 170px;
     font-size: 85%;
     font-weight: 100;
     font-family: 'Open Sans', sans-serif;
     color: #6B6B6B;
 }
 
-#credits a {
+.credits a {
     text-decoration: none;
     color: lightskyblue;
 }
 
-#credits a:hover {
+.credits a:hover {
     color: crimson;
+}
+
+.social {
+    padding: 0px 15px;
+    
+}
+
+i.social {
+    font-size: 150%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+    #search-btn, #random-btn {
+        width: 80px;
+    }
+    
+    #search-btn {
+        padding-left: 13px;
+    }
+    
+    #random-btn {
+        padding-left: 9px;
+        margin-left: -30px;
+    }
+    
 }
 
 @media only screen and (max-width: 575px) {
